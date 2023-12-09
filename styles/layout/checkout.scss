@@ -1,0 +1,256 @@
+.toggale_bar {
+    background-color: #F6F7FB;
+    border-radius: 6px;
+    padding: 17px 30px;
+    color: #777777;
+}
+
+.toggale_bar span {
+    color: #777777;
+    font-size: 16px;
+    margin-left: 1rem;
+}
+
+.toggale_bar a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.toggale_bar a:hover {
+    color: #3577f0;
+}
+
+.card {
+    border-radius: 16px !important;
+    padding: 1rem;
+}
+
+.card-body p {
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #777777;
+    margin: 0 0 30px
+}
+
+.form_group {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.form_group label {
+
+    position: absolute;
+    top: -11px;
+    left: 20px;
+    pointer-events: none;
+    z-index: 4;
+    background: #fff;
+    padding: 0 10px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #777777;
+}
+
+.form_group input {
+    border-radius: 6px;
+    height: 50px;
+    font-size: 16px;
+    padding: 0 20px;
+    background-color: #fff;
+    width: 100%;
+    border: 1px solid #CBD3D9;
+}
+
+.form_group button {
+    border: 0;
+    background-color: #3577f0;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 16px 38px;
+    position: relative;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+}
+
+.form_group button:hover {
+    transform: scale(1.1);
+}
+
+.input-group input {
+    border: 1px solid #CBD3D9;
+    width: auto;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 30px;
+    border-radius: 6px !important;
+}
+
+.input-group button {
+    border: 0;
+    background-color: #3577f0;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 12px 38px;
+    position: relative;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+}
+
+.input-group button:hover {
+    transform: scale(1.1);
+}
+
+.check_bill h4 {
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #292930;
+    font-size: 24px;
+}
+
+.form_group select {
+    border-radius: 6px;
+    height: 50px;
+    font-size: 16px;
+    padding: 0 20px;
+    background-color: #fff;
+    width: 100%;
+    border: 1px solid #CBD3D9;
+    color: #777777;
+}
+
+.check_account {
+    margin-bottom: 30px;
+}
+
+.check_account input {
+    border-color: #CBD3D9;
+    padding: 0 30px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+.check_account label {
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    color: #292930;
+    font-weight: 500;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.diff_shippng {
+    display: flex;
+    text-decoration: none;
+}
+
+.diff_shippng input {
+    height: 60px;
+    border-color: #CBD3D9;
+    padding: 0 30px;
+}
+
+.diff_shippng label {
+    font-size: 24px;
+    padding-left: 0;
+    padding-right: 28px;
+    width: 100%;
+    color: #292930;
+}
+
+.form_group textarea {
+    padding: 15px 30px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #CBD3D9;
+    font-size: 14px;
+    min-height: 160px;
+}
+
+.order {
+    background-color: #f9f3f0;
+    border-radius: 6px;
+    padding: 40px;
+}
+
+.order_table {
+    background-color: white;
+    border-radius: 6px;
+    padding: 30px;
+    margin-bottom: 45px;
+}
+
+.summery_table thead th {
+    font-size: 20px;
+    color: #292930;
+    text-transform: capitalize;
+    padding: 15px 0;
+}
+
+.order_product td {
+    border-bottom: 1px solid;
+    border-color: rgba(101, 105, 115, .2);
+    font-size: 16px;
+    font-weight: 400;
+    color: #292930;
+    padding: 18px 15px 18px 0;
+    min-width: 180px;
+}
+
+.input_group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input_group input {
+    background: #F6F7FB;
+    border: 1px solid var(--color-border);
+    transition: all .4s ease-out 0s;
+    color: #777777;
+}
+
+.input_group label {
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    color: #777777;
+    font-weight: 300;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.order_total td {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.singal_payment {
+    border-bottom: 1px solid #CBD3D9;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.singal_payment p {
+    padding-left: 28px;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 300;
+    color: #777777;
+}

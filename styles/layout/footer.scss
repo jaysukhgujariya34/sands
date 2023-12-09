@@ -1,0 +1,156 @@
+.footer_area {
+	padding: 50px 0 0;
+}
+
+.footer_width p {
+	font-size: 16px;
+	line-height: 1.7;
+	font-weight: 400;
+	color: #777777;
+	margin: 0 0 30px;
+}
+
+.width_title {
+	font-weight: 600;
+	font-size: 18px;
+	letter-spacing: -0.025em;
+	margin-bottom: 20px;
+}
+
+.footer_width span {
+	font-size: 16px;
+	line-height: 1.7;
+	font-weight: 400;
+	color: #777777;
+}
+
+.footer_width ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.footer_width ul li {
+	font-size: 16px;
+	line-height: 1.7;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	color: #777777;
+	font-family: "DM Sans",
+		sans-serif;
+}
+
+.footer_icon {
+	padding-right: 5px;
+	top: 5px;
+	left: 0;
+	font-size: 1.4rem;
+}
+
+.navbar_item1 {
+	margin-right: 1.5rem;
+	font-size: 15px;
+}
+
+.navbar_item1::after {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0;
+	background: transparent;
+	transition: all 0.5s ease;
+}
+
+.navbar_item1:hover::after {
+	width: 50%;
+	background: black;
+}
+
+.navbar_links1 {
+	text-decoration: none;
+	color: #777777;
+}
+
+.navbar_links1:hover {
+	color: #777777;
+}
+
+.btn_group {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+}
+
+.qr {
+	margin-right: 20px;
+}
+
+.app {
+	margin-bottom: 15px;
+}
+
+.copy_right {
+	padding: 15px 0;
+}
+
+.social {
+	display: flex;
+	margin: -10px;
+}
+
+.social a {
+	margin: 5px;
+	color: #777777;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	transition: .3s;
+	width: 30px;
+	height: 30px;
+}
+
+.social a:hover {
+
+	background-color: #ff497c;
+	border-radius: 50%;
+	color: white;
+	transform: scale(1.1);
+
+}
+
+.quick_link {
+	color: #777777;
+	font-size: 14px;
+}
+
+.paymant_img {
+	font-size: 14px;
+	display: flex;
+	justify-content: end;
+}
+
+
+.paymant_img img {
+	height: 20px;
+	margin: 0 10px;
+}
+
+@media screen and (max-width : 575px) {
+	.app_link {
+		display: grid;
+	}
+}
+
+@media screen and (max-width : 992px) {
+	.social {
+		display: flex;
+		justify-content: center;
+		margin: 8px 0;
+	}
+
+	.paymant_img {
+		display: flex;
+		justify-content: center;
+		margin: 8px 0;
+	}
+}

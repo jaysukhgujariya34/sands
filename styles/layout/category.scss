@@ -1,0 +1,97 @@
+.category_product {
+	text-align: center;
+	border-radius: 6px;
+	margin: 0 0 1rem .5rem;
+	box-shadow: 0 15px 20px -10px rgb(0, 0, 0, .1);
+	transition: .5s ease-in-out;
+	border: 1px solid gainsboro;
+	width: 159px;
+	height: 152px;
+}
+
+.category_product:hover {
+	transform: scale(1.1);
+}
+
+.cat_title {
+	margin-bottom: 0;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.cat_title:hover {
+	color: #292930;
+}
+
+.cat_category {
+	text-decoration: none;
+	margin: 20px;
+	outline: none;
+	color: #292930;
+}
+
+
+.cat_img {
+	margin: 0 auto 8px;
+	min-height: 41px;
+}
+
+.cat_img:hover {
+	color: #292930;
+}
+
+@media screen and (max-width : 399px) {
+	.category_product {
+		width: 352px;
+		height: 152px;
+	}
+}
+
+@media screen and (max-width : 383px) {
+	.category_product {
+		width: 345px;
+		height: 152px;
+	}
+}
+
+@media screen and (max-width : 376px) {
+	.category_product {
+		width: 330px;
+		height: 152px;
+	}
+}
+
+@media screen and (max-width : 361px) {
+	.category_product {
+		width: 320px;
+		height: 152px;
+	}
+}
+
+@media screen and (max-width : 352px) {
+	.category_product {
+		width: 300px;
+		height: 152px;
+	}
+}
+
+@media screen and (max-width : 331px) {
+	.category_product {
+		width: 280px;
+		height: 152px;
+	}
+}
+
+@media screen and (max-width : 311px) {
+	.category_product {
+		width: 250px;
+		height: 152px;
+	}
+}
+
+@media screen and (max-width : 281px) {
+	.category_product {
+		width: 230px;
+		height: 152px;
+	}
+}
