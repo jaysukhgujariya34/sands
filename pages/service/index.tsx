@@ -11,7 +11,7 @@ const Service = () => {
 		<>
 			<div className="container mt-5">
 				<div className="row">
-					<div className="col-lg-3 col-md-6  d-flex">
+					<div className="col-lg-6 col-md-12  d-flex">
 						<div className="icon">
 							<Image src={service1} alt='' className='icon_img' />
 						</div>
@@ -20,7 +20,7 @@ const Service = () => {
 							<p>Tell about your service.</p>
 						</div>
 					</div>
-					<div className="col-lg-3 col-md-6 d-flex">
+					{/* <div className="col-lg-3 col-md-6 d-flex">
 						<div className="icon">
 							<Image src={service2} alt='' className='icon_img' />
 						</div>
@@ -29,8 +29,8 @@ const Service = () => {
 							</h6>
 							<p>Within 10 days.</p>
 						</div>
-					</div>
-					<div className="col-lg-3 col-md-6  d-flex">
+					</div> */}
+					{/* <div className="col-lg-3 col-md-6  d-flex">
 						<div className="icon">
 							<Image src={service3} alt='' className='icon_img' />
 						</div>
@@ -39,8 +39,8 @@ const Service = () => {
 							</h6>
 							<p>No question ask.</p>
 						</div>
-					</div>
-					<div className="col-lg-3 col-md-6 d-flex">
+					</div> */}
+					<div className="col-lg-6 col-md-12 d-flex">
 						<div className="icon">
 							<Image src={service4} alt='' className='icon_img' />
 						</div>
