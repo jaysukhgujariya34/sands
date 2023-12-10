@@ -15,7 +15,7 @@ const index = () => {
         className="d-flex align-items-center w-100"
         style={{ display: "flex", justifyContent: "space-between" }}
       >
-        <Image src={logo} alt="logo" className="hum_burger" />
+        {/* <Image src={logo} alt="logo" className="hum_burger" /> */}
 
         <Header />
       </div>

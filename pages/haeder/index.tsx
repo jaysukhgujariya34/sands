@@ -27,102 +27,12 @@ const Header = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <>
-      <div className="container w-100">
-        <div className="d-flex justify-content-end">
-          
-          <div onClick={handleShow}>
-            <HiOutlineMenu className="hum_burger" />
-          </div>
-
-          <div className="mt-3">
-            <Offcanvas
-              show={show}
-              onHide={handleClose}
-              style={{ width: "17rem" }}
-              placement={"end"}
-            >
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title>
-                  <Image src={logo} alt="logo" />
-                </Offcanvas.Title>
-              </Offcanvas.Header>
-              <Offcanvas.Body>
-                <ul className="nav d-block">
-                  <li className="mb-3">
-                    <div className="drop_menu">
-                      <Link
-                        href=""
-                        className="navbar_links text-secondary fw-normal text-white	"
-                        aria-controls="example-collapse-text"
-                      >
-                        Home
-                      </Link>
-                    </div>
-                  </li>
-                  <li className="mb-3">
-                    <div className="drop_menu">
-                      <Link
-                        href=""
-                        className="navbar_links text-secondary fw-normal text-white	"
-                        onClick={() => setOpen1(!open1)}
-                        aria-controls="example-collapse-text"
-                        aria-expanded={open1}
-                      >
-                        <b>Shop</b>
-                      </Link>
-                    </div>
-                  </li>
-                  <li className="mb-3">
-                    <div className="drop_menu">
-                      <Link
-                        href=""
-                        className="navbar_links text-secondary fw-bold text-white	"
-                      >
-                        Pages
-                      </Link>
-                    </div>
-                  </li>
-                  <li className="  mb-3">
-                    <Link
-                      href=""
-                      className="navbar_links text-secondary fw-bold text-white	"
-                    >
-                      About
-                    </Link>
-                  </li>
-                  <li className="  mb-3">
-                    <div className="drop_menu">
-                      <Link
-                        href=""
-                        className="navbar_links text-secondary fw-bold text-white	"
-                      >
-                        bold
-                      </Link>
-                    </div>
-                  </li>
-                  <li className="  mb-3">
-                    <Link
-                      href=""
-                      className="navbar_links text-secondary fw-bold text-white	"
-                    >
-                      Contect
-                    </Link>
-                  </li>
-                </ul>
-              </Offcanvas.Body>
-            </Offcanvas>
-          </div>
-        </div>
+    <div style={{display:'flex',justifyContent:'space-between',width:'100%',alignItems:'center',padding:'10px 20px'}}>
+      <div className=" d-flex justify-content-center">
+        <Image src={logo} alt="logo" className="logo" />
       </div>
-      {/* <Modals /> */}
-
-      {/* <hr className="border border-1 m-0 p-0" /> */}
       <div className="container navs">
-        <ul className="nav justify-content-center p-2">
-          <div className="col-md-4 col-5 d-flex justify-content-center">
-            <Image src={logo} alt="logo" className="logo" />
-          </div>
+        <ul className="nav justify-content-end p-2">
           <li className="navbar_item">
             <Link href="" className="navbar_links">
               <b>Home</b>
@@ -158,6 +68,90 @@ const Header = () => {
           </li>
         </ul>
       </div>
+      <div className="d-flex justify-content-end">
+        <div onClick={handleShow}>
+          <HiOutlineMenu className="hum_burger" />
+        </div>
+
+        <div className="mt-3">
+          <Offcanvas
+            show={show}
+            onHide={handleClose}
+            style={{ width: "17rem" }}
+            placement={"end"}
+          >
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title>
+                <Image src={logo} alt="logo" />
+              </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              <ul className="nav d-block">
+                <li className="mb-3">
+                  <div className="drop_menu">
+                    <Link
+                      href=""
+                      className="navbar_links text-secondary fw-normal text-white	"
+                      aria-controls="example-collapse-text"
+                    >
+                      Home
+                    </Link>
+                  </div>
+                </li>
+                <li className="mb-3">
+                  <div className="drop_menu">
+                    <Link
+                      href=""
+                      className="navbar_links text-secondary fw-normal text-white	"
+                      onClick={() => setOpen1(!open1)}
+                      aria-controls="example-collapse-text"
+                      aria-expanded={open1}
+                    >
+                      <b>Shop</b>
+                    </Link>
+                  </div>
+                </li>
+                <li className="mb-3">
+                  <div className="drop_menu">
+                    <Link
+                      href=""
+                      className="navbar_links text-secondary fw-bold text-white	"
+                    >
+                      Pages
+                    </Link>
+                  </div>
+                </li>
+                <li className="  mb-3">
+                  <Link
+                    href=""
+                    className="navbar_links text-secondary fw-bold text-white	"
+                  >
+                    About
+                  </Link>
+                </li>
+                <li className="  mb-3">
+                  <div className="drop_menu">
+                    <Link
+                      href=""
+                      className="navbar_links text-secondary fw-bold text-white	"
+                    >
+                      bold
+                    </Link>
+                  </div>
+                </li>
+                <li className="  mb-3">
+                  <Link
+                    href=""
+                    className="navbar_links text-secondary fw-bold text-white	"
+                  >
+                    Contect
+                  </Link>
+                </li>
+              </ul>
+            </Offcanvas.Body>
+          </Offcanvas>
+        </div>
+      </div>
       <Offcanvas
         className="back_drop_canvas"
         show={show1}
@@ -173,7 +167,6 @@ const Header = () => {
         <Offcanvas.Body>
           <ul className="cart_item_list">
             <li className="cart_item">
-              
               <div className="item_content">
                 <span className="rating">
                   <FaStar />
@@ -289,7 +282,7 @@ const Header = () => {
           </div>
         </Offcanvas.Body>
       </Offcanvas>
-    </>
+    </div>
   );
 };
 
