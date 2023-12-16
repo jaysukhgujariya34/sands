@@ -28,8 +28,8 @@ const Header = () => {
   const handleShow = () => setShow(true);
   return (
     <div style={{display:'flex',justifyContent:'space-between',width:'100%',alignItems:'center',padding:'10px 20px'}}>
-      <div className=" d-flex justify-content-center">
-        <Image src={logo} alt="logo" className="logo" />
+      <div className=" d-flex justify-content-start-50">
+        <Image src={logo} alt="logo" className="logo w-25 h-25"  />
       </div>
       <div className="container navs">
         <ul className="nav justify-content-end p-2">
