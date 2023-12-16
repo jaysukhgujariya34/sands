@@ -205,11 +205,11 @@ const Product = () => {
           </p>
         </div>
         <Slider {...settings}>
-          {data.map((item, i) => {
+          {data.map((item, n) => {
             const { thumbnail } = item;
 
             return (
-              <Slider {...settings2} key={i}>
+              <Slider {...settings2} key={n}>
                 {thumbnail?.map((item, i) => (
                   <div className="p-2 mt-4" key={i}>
                     <div className="thumbnail">
