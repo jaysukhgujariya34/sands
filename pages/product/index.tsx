@@ -209,7 +209,7 @@ const Product = () => {
             const { thumbnail } = item;
 
             return (
-              <Slider {...settings2}>
+              <Slider {...settings2} key={i}>
                 {thumbnail?.map((item, i) => (
                   <div className="p-2 mt-4" key={i}>
                     <div className="thumbnail">
