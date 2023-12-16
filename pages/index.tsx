@@ -30,8 +30,8 @@ export default function Home() {
       <ProductMonth />
       <Category />
       <FeedBack />
-      <AllProduct />
-      <NewProduct />
+      {/* <AllProduct /> */}
+      {/* <NewProduct /> */}
       <Newsletter />
       <Service />
       <Footer />

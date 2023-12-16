@@ -152,64 +152,145 @@ const NewProduct = () => {
 		]
 	};
 	return (
-		<div className="container mt-5">
-			<div className="row">
-				<p className='product_week'>
-					<small><BsFillBasket2Fill className='cart_icon' /> </small>	This Week’s
-				</p>
-				<div className='d-flex justify-content-between'>
-					<h2 className='product_title'>New Arrivals</h2>
-					<p className='arrow_btn'>
-						<button className=''><HiOutlineArrowLeft /></button>
-						<button className=' ms-2'><HiOutlineArrowRight /></button>
-					</p>
-				</div>
-			</div>
-			<div className="row">
-				<Slider {...settings}>
+    <div className="container mt-5">
+      <div className="row">
+        <p className="product_week">
+          <small>
+            <BsFillBasket2Fill className="cart_icon" />{" "}
+          </small>{" "}
+          This Week’s
+        </p>
+        <div className="d-flex justify-content-between">
+          <h2 className="product_title">New Arrivals</h2>
+          <p className="arrow_btn">
+            <button className="">
+              <HiOutlineArrowLeft />
+            </button>
+            <button className=" ms-2">
+              <HiOutlineArrowRight />
+            </button>
+          </p>
+        </div>
+      </div>
+      <div className="row">
+        <Slider {...settings}>
+          {/* {data.map((item, i) => (
+            <div className="p-2 mt-4" key={i}>
+              <div className="thumbnail_image">
+                <Image
+                  src={item.thumbnail}
+                  alt=""
+                  className="thumbnail_photo"
+                />
+                {item.discount ? (
+                  <p className="product_budget">{item.discount}% OFF </p>
+                ) : null}
+              </div>
 
-					{data.map((item, i) => (
-						<div className='p-2 mt-4' key={i}>
-							<div className="thumbnail_image">
-								<Image src={item.thumbnail} alt='' className='thumbnail_photo' />
-								{item.discount ? <p className='product_budget'>{item.discount}% OFF </p> : null}
-							</div>
+              <div className="thumbnail_content mt-5">
+                <div className="d-flex justify-content-center">
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                      checked
+                    />
+                  </div>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input color1"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                  </div>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input color2"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                  </div>
+                </div>
+                <h5 className="thumbnail_title">{item.title}</h5>
+                <div className="product_price">
+                  <span className="product_old_price">{item.old_price}</span>
+                  <span className="product_currunt_price">
+                    {item.currunt_price}{" "}
+                  </span>
+                </div>
+                <div className="product_actions">
+                  <HiOutlineHeart className="like" />
+                  <button className="product_cart1">
+                    <Link href="/cart">Add To Cart</Link>
+                  </button>
+                  <HiOutlineEye className="eye" />
+                </div>
+              </div>
+            </div>
+          ))} */}
 
-							<div className="thumbnail_content mt-5">
+          <div className="p-2 mt-4">
+            <div className="thumbnail_image">
+              {/* <Image
+                src="https://assets.ajio.com/medias/sys_master/root/20230925/g0Yt/65119255afa4cf41f506b767/-473Wx593H-466630819-pink-MODEL4.jpg"
+                alt=""
+                className="thumbnail_photo"
+              /> */}
+              <img src="https://assets.ajio.com/medias/sys_master/root/20230925/g0Yt/65119255afa4cf41f506b767/-473Wx593H-466630819-pink-MODEL4.jpg" width='100%' />
+            </div>
 
-								<div className='d-flex justify-content-center'>
-									<div className="form-check">
-										<input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked />
-									</div>
-									<div className="form-check">
-										<input className="form-check-input color1" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-									</div>
-									<div className="form-check">
-										<input className="form-check-input color2" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-									</div>
-								</div>
-								<h5 className='thumbnail_title'>{item.title}</h5>
-								<div className='product_price'>
-									<span className='product_old_price'>{item.old_price}</span>
-									<span className='product_currunt_price'>{item.currunt_price}	</span>
-								</div>
-								<div className="product_actions">
-									<HiOutlineHeart className='like' />
-									<button className='product_cart1'><Link href='/cart'>Add To Cart</Link></button>
-									<HiOutlineEye className='eye' />
-								</div>
-							</div>
-						</div>
-
-					))}
-
-
-
-				</Slider>
-			</div>
-
-		</div>
-	)
+            <div className="thumbnail_content mt-5">
+              <div className="d-flex justify-content-center">
+                <div className="form-check">
+                  <input
+                    className="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                    checked
+                  />
+                </div>
+                <div className="form-check">
+                  <input
+                    className="form-check-input color1"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                </div>
+                <div className="form-check">
+                  <input
+                    className="form-check-input color2"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                </div>
+              </div>
+              <h5 className="thumbnail_title">jewellery</h5>
+              {/* <div className="product_price">
+                <span className="product_old_price">{item.old_price}</span>
+                <span className="product_currunt_price">
+                  {item.currunt_price}{" "}
+                </span>
+              </div> */}
+              <div className="product_actions">
+                <HiOutlineHeart className="like" />
+                <button className="product_cart1">
+                  <Link href="/cart">Add To Cart</Link>
+                </button>
+                <HiOutlineEye className="eye" />
+              </div>
+            </div>
+          </div>
+        </Slider>
+      </div>
+    </div>
+  );
 }
 
 export default NewProduct
