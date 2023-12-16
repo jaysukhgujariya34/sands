@@ -171,22 +171,11 @@ const Product = () => {
     // prevArrow: null,
     // nextArrow: null,
   };
-  //   const maltipaleImg = [
-  //     {
-  //       imgLink: [
-  //         "https://assets.ajio.com/medias/sys_master/root/20230925/dRkI/65119255afa4cf41f506b764/-473Wx593H-466630819-pink-MODEL2.jpg",
-  //         "https://assets.ajio.com/medias/sys_master/root/20230925/IRDy/65119255afa4cf41f506b770/-473Wx593H-466630819-pink-MODEL6.jpg",
-  //         "https://assets.ajio.com/medias/sys_master/root/20230925/D5xd/65119255afa4cf41f506b76a/-473Wx593H-466630819-pink-MODEL3.jpg",
-  //         "https://assets.ajio.com/medias/sys_master/root/20230925/D5xd/65119255afa4cf41f506b76a/-473Wx593H-466630819-pink-MODEL3.jpg",
-  //         "https://assets.ajio.com/medias/sys_master/root/20230925/pCD3/65119255afa4cf41f506b76b/-473Wx593H-466630819-pink-MODEL5.jpg",
-  //         "https://assets.ajio.com/medias/sys_master/root/20230925/EBeq/65119255afa4cf41f506b7e4/-473Wx593H-466630819-pink-MODEL.jpg",
-  //       ],
-  //     },
-  //   ];
+
 
   return (
     <>
-      <div className="product_style mt-5">
+      <div className="container mt-5">
         <p className="product_week">
           <small>
             <BsFillBasket2Fill size={25} className="cart_icon" />{" "}
@@ -211,9 +200,9 @@ const Product = () => {
             return (
               <Slider {...settings2} key={n}>
                 {thumbnail?.map((item, i) => (
-                  <div className="p-2 mt-4" key={i}>
+                  <div className="p-2 mt-4 " key={i}>
                     <div className="thumbnail">
-                      <img src={item} />
+                      <img src={item}  width="100%" />
 
                       <div className="product_action">
                         <HiOutlineHeart className="whislist" />
@@ -239,7 +228,7 @@ const Product = () => {
             );
           })}
         </Slider>
-        <hr className="border border-1 mt-5" style={{ marginRight: "19rem" }} />
+        <hr className="border border-1 mt-5" />
       </div>
     </>
   );
